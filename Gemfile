@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # required to run your Rails app with both logging aggregation and static assets serving in production
 gem 'rails_12factor', group: :production
+# Devise Gem for Authentication
+gem 'devise'
+# Pretty Print Ruby Objects
+gem 'awesome_print'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
