@@ -27,6 +27,12 @@ gem 'rails_12factor', group: :production
 gem 'devise'
 # Pretty Print Ruby Objects
 gem 'awesome_print'
+# Sidekiq or async background processing
+gem 'sidekiq'
+# For sending confirmation emails asynchronously
+gem 'devise-async'
+# Puma Web Server
+gem 'puma'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
