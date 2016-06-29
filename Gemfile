@@ -33,6 +33,12 @@ gem 'sidekiq'
 gem 'devise-async'
 # Puma Web Server
 gem 'puma'
+# Bootstrap for styling
+gem 'bootstrap-sass', '~> 3.3.6'
+# Simple Form
+gem 'simple_form'
+# Stripe Gem for payment processing
+gem 'stripe'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

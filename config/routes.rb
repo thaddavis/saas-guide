@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resources :weather_grid
 
+  get "/subscriptions/cancel_subscription" => "subscriptions#cancel_subscription"
+  resources :subscriptions
+
   # You can have the root of your site routed with "root"
   root to: 'home#index'
 

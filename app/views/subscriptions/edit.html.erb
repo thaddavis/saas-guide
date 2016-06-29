@@ -1,0 +1,17 @@
+Please choose your plan:
+<%= render :partial => "plans" %>
+
+<div class="row">
+  <div class="col-sm-3 col-sm-offset-3">
+    <%= form_tag "/subscriptions" do %>
+          <span class="payment-errors text-danger"></span>
+
+          <%= collection_select :plan, :stripe_id, @plans,
+          :stripe_id, :name, {}, { class: "form-control" } %>
+
+          </br>
+
+          <input type="submit" class="btn btn-primary" value="Update Subscription">
+    <% end %>
+  </div>
+</div>
