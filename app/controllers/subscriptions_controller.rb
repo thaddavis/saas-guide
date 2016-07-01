@@ -101,11 +101,16 @@ class SubscriptionsController < ApplicationController
 
     token = params[:stripeToken]
     current_account = Account.find_by_email(current_user.email)
+
+    ap "BBBBBBBBBBBBBBB"
+    ap "customer _ account"
+    ap current_account
+
     customer_id = current_account.customer_id
     #Get customer from Stripe
     customer = Stripe::Customer.retrieve(customer_id)
 
-    ap "KKKKKKKKKKKKKKKK"
+    ap "BBBBBBBBBBBBBBB"
     ap "customer"
     ap customer
 
