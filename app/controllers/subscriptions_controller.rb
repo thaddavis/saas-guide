@@ -95,12 +95,19 @@ class SubscriptionsController < ApplicationController
 
   def update_card_details
     #Take the token given by stripe and set it on the customer object
+    ap "KKKKKKKKKKKKKKKK"
+    ap "params"
+    ap params
 
     token = params[:stripeToken]
     current_account = Account.find_by_email(current_user.email)
     customer_id = current_account.customer_id
     #Get customer from Stripe
     customer = Stripe::Customer.retrieve(customer_id)
+
+    ap "KKKKKKKKKKKKKKKK"
+    ap "customer"
+    ap customer
 
     #Set new card token
     customer.source = token
