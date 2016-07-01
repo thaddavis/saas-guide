@@ -106,6 +106,9 @@ class SubscriptionsController < ApplicationController
     ap "customer _ account"
     ap current_account
 
+    ap "token"
+    ap token
+
     customer_id = current_account.customer_id
     #Get customer from Stripe
     customer = Stripe::Customer.retrieve(customer_id)
