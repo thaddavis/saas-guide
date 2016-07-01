@@ -39,6 +39,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 # Stripe Gem for payment processing
 gem 'stripe'
+# Stripe gem for supporting Stripe webhooks
+gem 'stripe_event'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -53,6 +55,8 @@ gem 'stripe'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  # Gem for forwarding webhooks to localhost
+  gem 'ultrahook'
 end
 
 group :development do
